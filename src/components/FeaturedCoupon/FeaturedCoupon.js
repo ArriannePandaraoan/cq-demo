@@ -8,7 +8,6 @@ import { Button, Space } from "antd";
 const StyledContainer = styled.div`
   position: absolute;
   z-index: 100;
-  // background-color: blue;
 `;
 
 const StyledInFrame = styled.div`
@@ -44,17 +43,19 @@ const Component = () => {
           <img
             src={MothersDayFlower}
             alt="pic"
-            className="w-[40%] mr-[10%] p-[5%]"
+            className="w-[40%] mr-[5%] p-[5%] ml-[-8%]"
           />
+
           <StyledInFrameTxt>
             <img src={DB} alt="pic" className="w-[20%]" />
             Designer Blooms: Half Dozen Roses
             <br />
-            <span className="bg-white">Get 30% Off</span>
+            <span className="bg-white pl-[15px] pr-[15px]">Get 30% Off</span>
             <br />
             <Button
               id="btn-fc"
-              className="mt-[-3%] font-sans text-white bg-[#05B2CD] font-bold hover:text-white"
+              className="mt-[-10%] font-sans font-bold text-center"
+              size="large"
             >
               Visit Store
             </Button>

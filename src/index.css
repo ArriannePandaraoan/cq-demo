@@ -18,8 +18,34 @@ code {
     monospace;
 }
 
-#btn-fc:hover {
+#btn-fc:before {
   text-decoration: none;
-  background-color: #4caf50;
   color: white;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffe356;
+  transition: all 0.5s;
+  z-index: 100;
+  border-radius: 6px;
+}
+
+#btn-fc {
+  background-color: #05b2cd;
+  transition: all 0.5s;
+  color: white;
+  z-index: 200;
+}
+
+#btn-fc:hover {
+  color: black;
+}
+
+#btn-fc:hover:before {
+  width: 100%;
+  background-color: #ffe356;
+  z-index: -100;
 }
