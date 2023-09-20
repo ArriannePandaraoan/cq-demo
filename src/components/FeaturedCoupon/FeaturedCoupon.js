@@ -54,7 +54,7 @@ const Component = () => {
             <br />
             <Button
               id="btn-fc"
-              className="mt-[-10%] font-sans font-bold text-center"
+              className="mt-[5%] font-sans font-bold text-center"
               size="large"
             >
               Visit Store
