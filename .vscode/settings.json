@@ -1,0 +1,7 @@
+{
+    "[json]": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "diffEditor.codeLens": false
+    }
+}
