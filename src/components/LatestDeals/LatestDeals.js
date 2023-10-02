@@ -6,25 +6,27 @@ import DB from "../../assets/images/DB.png";
 import { Button, Space } from "antd";
 
 const StyledContainer = styled.div`
-  font-family: Arial;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
 `;
 
-
 const Component = () => {
-  return (
-    <>
-
-      <StyledContainer>
-        <div className="mt-[0.7%] absolute ml-[0.7%]">
-        <div className="bg-[#ffe356] pt-[3%] pb-[3%] pl-[30px] pr-[30px] z-[-100] relative text-[#ffe356]">Check out these latest deals</div></div>
-        <div className="border-solid border-2 border-gray-400 pt-[3%] pb-[3%] pl-[30px] pr-[30px]">Check out these latest deals</div>
-       
-      </StyledContainer>
-    </>
-  );
+	return (
+		<>
+			<StyledContainer>
+				<div className="mt-[0.7%] absolute ml-[0.7%]">
+					<div className="bg-[#ffe356] pt-[3%] pb-[3%] pl-[30px] pr-[30px] z-[-100] relative text-[#ffe356]">
+						Check out these latest deals
+					</div>
+				</div>
+				<div className="border-solid border-2 border-gray-500 pt-[3%] pb-[3%] pl-[30px] pr-[30px]">
+					Check out these latest deals
+				</div>
+			</StyledContainer>
+		</>
+	);
 };
 
 export default Component;

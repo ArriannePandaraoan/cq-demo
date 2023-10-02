@@ -22,6 +22,7 @@ const StyledInFrame = styled.div`
 	font-weight: 700;
 	// width: 100%;
 	// background-color: pink;
+	// padding-left: 10px;
 `;
 
 const StyledInFrameTxt = styled.div`
@@ -33,20 +34,36 @@ const StyledInFrameTxt = styled.div`
 
 const StyledInFrameTxtInner = styled.div`
 	font-family: Trocchi;
-	width: 60%;
+	// max-width: fit-content;
+	width: 70%;
 	font-size: 16px;
 `;
 
 const StyledInFrameLink = styled.div`
 	font-family: Space Mono;
-	width: 30%;
-	font-size: 18px;
+	font-size: 16px;
+	align-items: center;
 	text-align: center;
 	cursor: pointer;
-	align-items: center;
-	background-color: blue;
+	background-color: #4daf8c;
 	margin-left: -10%;
-	margin-right: 3%;
+	margin-right: 4%;
+	width: 15rem;
+	border: 3px dashed black;
+	padding: 10px;
+`;
+
+const StyledInFrameLinkBg = styled.div`
+	font-family: Space Mono;
+	font-size: 16px;
+	align-items: center;
+	text-align: center;Dum
+	cursor: pointer;
+	background-color: ##E9F0FF;
+	margin-left: -10%;
+	margin-right: 4%;
+	width: 15rem;
+	padding: 10px;
 `;
 
 const Component = () => {
@@ -54,13 +71,13 @@ const Component = () => {
 		<>
 			<StyledContainer>
 				<div className="relative">
-					<div className="bg-[#E9F0FF] relative text-[#E9F0FF]">
-						<div className="border-dashed border-2 border-gray-400 pt-[3%] pb-[3%] pl-[30px]">
+					<div className="bg-[transparent] relative text-[#E9F0FF]">
+						<div className="border-dashed border-2 border-gray-400 pt-[3%] pb-[3%] pl-[30px] ">
 							<StyledInFrame>
 								<img
 									src={PizzaHut}
 									alt="pic"
-									className="w-[35%] mr-[5%] ml-[0%]"
+									className="w-[30%] mr-[5%] ml-[0%]"
 								/>
 								<StyledInFrameTxt>
 									<span className="text-[#4DAF8C]">Hot Deals ₱499</span>
@@ -74,11 +91,36 @@ const Component = () => {
 								</StyledInFrameTxt>
 
 								<StyledInFrameLink>
-									<span className="text-[#ffffff]">
-										<br></br>
-										See Promo Code
-									</span>
+									<span className="text-[#ffffff]">See Promo Code</span>
 								</StyledInFrameLink>
+							</StyledInFrame>
+						</div>
+					</div>
+				</div>
+
+				<div className="relative">
+					<div className="bg-[#E9F0FF] absolute text-[#E9F0FF] z-[-10] mt-[-17%] pl-[10rem]">
+						<div className=" pt-[3%] pb-[3%] pl-[30px] ">
+							<StyledInFrame>
+								<img
+									src={PizzaHut}
+									alt="pic"
+									className="w-[30%] mr-[5%] ml-[0%] opacity-0"
+								/>
+								<StyledInFrameTxt>
+									<span className="text-[#E9F0FF]">Hot Deals ₱499</span>
+									<StyledInFrameTxtInner>
+										<span className="text-[#E9F0FF]">
+											<br></br>
+											Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the
+											price of one. Available in new flavors.
+										</span>
+									</StyledInFrameTxtInner>
+								</StyledInFrameTxt>
+
+								<StyledInFrameLinkBg>
+									<span className="text-[#E9F0FF] ">See Promo Code</span>
+								</StyledInFrameLinkBg>
 							</StyledInFrame>
 						</div>
 					</div>

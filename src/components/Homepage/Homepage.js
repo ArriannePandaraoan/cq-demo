@@ -33,7 +33,18 @@ const StyledContainerNoBgColor = styled.div`
 
 const StyledContainerGenericCoupon = styled.div`
 	margin: 0% 0% 2% 0%;
+	// background-color: green;
 	width: 100%;
+	padding: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+`;
+
+const StyledContainerGenericCouponInner = styled.div`
+	margin: 0% 0% 2% 0%;
+	width: 60%;
 	padding: 3%;
 	display: flex;
 	flex-direction: row;
@@ -59,7 +70,9 @@ const Component = () => {
 			</StyledContainerNoBgColor>
 
 			<StyledContainerGenericCoupon>
-				<GenericCoupon />
+				<StyledContainerGenericCouponInner>
+					<GenericCoupon />
+				</StyledContainerGenericCouponInner>
 			</StyledContainerGenericCoupon>
 		</>
 	);
