@@ -45,6 +45,7 @@ const StyledContainerGenericCoupon = styled.div`
 const StyledContainerGenericCouponInner = styled.div`
 	margin: 0% 0% 2% 0%;
 	width: 60%;
+	overflow: visible;
 	padding: 3%;
 	display: flex;
 	flex-direction: row;

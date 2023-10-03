@@ -57,12 +57,13 @@ const StyledInFrameLinkBg = styled.div`
 	font-family: Space Mono;
 	font-size: 16px;
 	align-items: center;
-	text-align: center;Dum
+	text-align: center;
 	cursor: pointer;
-	background-color: ##E9F0FF;
+	background-color: #e9f0ff;
 	margin-left: -10%;
 	margin-right: 4%;
 	width: 15rem;
+	border: 3px dashed #4daf8ck;
 	padding: 10px;
 `;
 
@@ -98,9 +99,9 @@ const Component = () => {
 					</div>
 				</div>
 
-				<div className="relative">
-					<div className="bg-[#E9F0FF] absolute text-[#E9F0FF] z-[-10] mt-[-17%] pl-[10rem]">
-						<div className=" pt-[3%] pb-[3%] pl-[30px] ">
+				<div className="absolute mt-[-9%] ml-[1.5%] z-[-100] w-[50%]">
+					<div className="bg-[#E9F0FF] text-[#E9F0FF]">
+						<div className="pt-[3%] pb-[3%] pl-[30px] ">
 							<StyledInFrame>
 								<img
 									src={PizzaHut}
@@ -108,9 +109,11 @@ const Component = () => {
 									className="w-[30%] mr-[5%] ml-[0%] opacity-0"
 								/>
 								<StyledInFrameTxt>
-									<span className="text-[#E9F0FF]">Hot Deals ₱499</span>
+									<span className="text-[#4DAF8C] opacity-0">
+										Hot Deals ₱499
+									</span>
 									<StyledInFrameTxtInner>
-										<span className="text-[#E9F0FF]">
+										<span className="text-[#000000] opacity-0">
 											<br></br>
 											Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the
 											price of one. Available in new flavors.
@@ -118,9 +121,11 @@ const Component = () => {
 									</StyledInFrameTxtInner>
 								</StyledInFrameTxt>
 
-								<StyledInFrameLinkBg>
-									<span className="text-[#E9F0FF] ">See Promo Code</span>
-								</StyledInFrameLinkBg>
+								<StyledInFrameLink className="opacity-0">
+									<span className="text-[#ffffff] opacity-0">
+										See Promo Code
+									</span>
+								</StyledInFrameLink>
 							</StyledInFrame>
 						</div>
 					</div>
