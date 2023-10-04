@@ -99,7 +99,7 @@ const Component = () => {
 					</div>
 				</div>
 
-				<div className="absolute mt-[-9%] ml-[1.5%] z-[-100] w-[50%]">
+				{/* <div className="absolute mt-[-9%] ml-[1.5%] z-[-100] w-[50%]">
 					<div className="bg-[#E9F0FF] text-[#E9F0FF]">
 						<div className="pt-[3%] pb-[3%] pl-[30px] ">
 							<StyledInFrame>
@@ -122,14 +122,14 @@ const Component = () => {
 								</StyledInFrameTxt>
 
 								<StyledInFrameLink className="opacity-0">
-									<span className="text-[#ffffff] opacity-0">
+									<span className="text-[#ffffff] opacity-0" id="btn-fc">
 										See Promo Code
 									</span>
 								</StyledInFrameLink>
 							</StyledInFrame>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</StyledContainer>
 		</>
 	);

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import HeroImg from "../../assets/images/HeroImg.png";
 import LatestDeals from "../LatestDeals";
 import GenericCoupon from "../GenericCoupon";
+import GenericCouponXiaomi from "../GenericCouponXiaomi";
 
 const StyledImg = styled.div`
 	margin-top: 5%;
@@ -32,8 +33,7 @@ const StyledContainerNoBgColor = styled.div`
 `;
 
 const StyledContainerGenericCoupon = styled.div`
-	margin: 0% 0% 2% 0%;
-	// background-color: green;
+	margin: 0%;
 	width: 100%;
 	padding: 3%;
 	display: flex;
@@ -43,7 +43,7 @@ const StyledContainerGenericCoupon = styled.div`
 `;
 
 const StyledContainerGenericCouponInner = styled.div`
-	margin: 0% 0% 2% 0%;
+	// margin: 0% 0% 0% 0%;
 	width: 60%;
 	overflow: visible;
 	padding: 3%;
@@ -51,6 +51,10 @@ const StyledContainerGenericCouponInner = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+`;
+
+const StyledContainerGenericCouponInnerBg = styled.div`
+	background-color: #e9f0ff;
 `;
 
 const Component = () => {
@@ -70,9 +74,17 @@ const Component = () => {
 				<LatestDeals />
 			</StyledContainerNoBgColor>
 
-			<StyledContainerGenericCoupon>
+			{/* <StyledContainerGenericCoupon>
 				<StyledContainerGenericCouponInner>
-					<GenericCoupon />
+					<StyledContainerGenericCouponInnerBg>
+						<GenericCoupon />
+					</StyledContainerGenericCouponInnerBg>
+				</StyledContainerGenericCouponInner>
+			</StyledContainerGenericCoupon> */}
+
+			<StyledContainerGenericCoupon className="!mt-[-5%]">
+				<StyledContainerGenericCouponInner>
+					<GenericCouponXiaomi />
 				</StyledContainerGenericCouponInner>
 			</StyledContainerGenericCoupon>
 		</>
