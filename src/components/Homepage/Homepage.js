@@ -8,6 +8,7 @@ import GenericCoupon from "../GenericCoupon";
 import GenericCouponXiaomi from "../GenericCouponXiaomi";
 import GenericCouponApple from "../GenericCouponApple";
 import GenericCouponFlower from "../GenericCouponFlower";
+import SeeMoreBtn from "../SeeMoreBtn";
 
 const StyledImg = styled.div`
 	margin-top: 5%;
@@ -100,6 +101,10 @@ const Component = () => {
 					<GenericCouponFlower />
 				</StyledContainerGenericCouponInner>
 			</StyledContainerGenericCoupon>
+
+			<StyledContainerNoBgColor>
+				<SeeMoreBtn />
+			</StyledContainerNoBgColor>
 		</>
 	);
 };
