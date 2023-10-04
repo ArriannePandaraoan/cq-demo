@@ -9,6 +9,7 @@ import GenericCouponXiaomi from "../GenericCouponXiaomi";
 import GenericCouponApple from "../GenericCouponApple";
 import GenericCouponFlower from "../GenericCouponFlower";
 import SeeMoreBtn from "../SeeMoreBtn";
+import CheckOutBlog from "../CheckOutBlog";
 
 const StyledImg = styled.div`
 	margin-top: 5%;
@@ -104,6 +105,10 @@ const Component = () => {
 
 			<StyledContainerNoBgColor>
 				<SeeMoreBtn />
+			</StyledContainerNoBgColor>
+
+			<StyledContainerNoBgColor>
+				<CheckOutBlog />
 			</StyledContainerNoBgColor>
 		</>
 	);

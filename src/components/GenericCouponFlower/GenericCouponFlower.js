@@ -86,12 +86,12 @@ const Component = () => {
 					/>
 
 					<StyledInFrameTxt className="mr-[5%]">
-						<span className="text-[#4DAF8C]">Hot Deals ₱499</span>
+						<span className="text-[#4DAF8C]">Get 42% Off</span>
 						<StyledInFrameTxtInner>
 							<span className="text-[#000000]">
 								<br></br>
-								Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the price of
-								one. Available in new flavors.
+								Buy Beautiful You bouquet of a dozen fresh red roses arranged in
+								a classic arm bouquet now at Flowerstore.ph for Mother’s Day!
 							</span>
 						</StyledInFrameTxtInner>
 					</StyledInFrameTxt>
