@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import PizzaHut from "../../assets/images/PizzaHut.png";
 import Xiaomi from "../../assets/images/Xiaomi.png";
+import Apple from "../../assets/images/Apple.png";
 import FrameFeatured from "../../assets/svg/FrameFeatured";
 import DB from "../../assets/images/DB.png";
 import { Button, Space } from "antd";
 import FrameGenericCoupon from "../../assets/svg/FrameGenericCoupon";
-import FrameGenericCouponLazada from "../../assets/svg/FrameGenericCouponLazada";
+import FrameGenericCouponAbenson from "../../assets/svg/FrameGenericCouponAbenson";
 
 // const StyledContainer = styled.div`
 // 	font-family: Arial;
@@ -67,35 +68,31 @@ const StyledInFrameLink = styled.div`
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	width: 190px;
-	justify-content: space-around;
+	width: 220px;
+	margin-left: 70px;
+	justify-content: flex-end;
 `;
 
 const Component = () => {
 	return (
 		<>
-			<FrameGenericCoupon />
+			<FrameGenericCouponAbenson />
 
 			<StyledContainer>
 				<StyledInFrame>
-					<img
-						src={PizzaHut}
-						alt="pic"
-						className="w-[200px] mr-[4%] ml-[-5%]"
-					/>
+					<img src={Apple} alt="pic" className="w-[100px] mr-[12%]" />
 
-					<StyledInFrameTxt className="mr-[5%]">
-						<span className="text-[#4DAF8C]">Hot Deals ₱499</span>
+					<StyledInFrameTxt className="mr-[4%]">
+						<span className="text-[#4DAF8C]">Take 6% off</span>
 						<StyledInFrameTxtInner>
 							<span className="text-[#000000]">
 								<br></br>
-								Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the price of
-								one. Available in new flavors.
+								Buy Iphone 11 now at Abenson Store
 							</span>
 						</StyledInFrameTxtInner>
 					</StyledInFrameTxt>
 
-					<StyledInFrameLink className="">
+					<StyledInFrameLink>
 						<span className="text-[#ffffff]">See Promo Code</span>
 					</StyledInFrameLink>
 				</StyledInFrame>

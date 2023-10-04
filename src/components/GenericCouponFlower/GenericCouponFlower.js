@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PizzaHut from "../../assets/images/PizzaHut.png";
 import Xiaomi from "../../assets/images/Xiaomi.png";
+import FlowerStore from "../../assets/images/FloweStrore.png";
 import FrameFeatured from "../../assets/svg/FrameFeatured";
 import DB from "../../assets/images/DB.png";
 import { Button, Space } from "antd";
@@ -79,9 +80,9 @@ const Component = () => {
 			<StyledContainer>
 				<StyledInFrame>
 					<img
-						src={PizzaHut}
+						src={FlowerStore}
 						alt="pic"
-						className="w-[200px] mr-[4%] ml-[-5%]"
+						className="w-[180px] mr-[4%] ml-[-5%]"
 					/>
 
 					<StyledInFrameTxt className="mr-[5%]">

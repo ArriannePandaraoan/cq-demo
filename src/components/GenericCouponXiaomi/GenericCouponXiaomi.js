@@ -6,6 +6,7 @@ import FrameFeatured from "../../assets/svg/FrameFeatured";
 import DB from "../../assets/images/DB.png";
 import { Button, Space } from "antd";
 import FrameGenericCoupon from "../../assets/svg/FrameGenericCoupon";
+import FrameGenericCouponLazada from "../../assets/svg/FrameGenericCouponLazada";
 
 // const StyledContainer = styled.div`
 // 	font-family: Arial;
@@ -27,7 +28,7 @@ const StyledInFrame = styled.div`
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 700;
-	// width: 100%;
+	width: 100%;
 	// background-color: pink;
 	// padding-left: 10px;
 	justify-content: space-around;
@@ -40,7 +41,8 @@ const StyledInFrameTxt = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: blue;
+	// background-color: blue;
+	width: 400px;
 `;
 
 const StyledInFrameTxtInner = styled.div`
@@ -51,7 +53,7 @@ const StyledInFrameTxtInner = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: green;
+	// background-color: green;
 `;
 
 const StyledInFrameLink = styled.div`
@@ -61,42 +63,37 @@ const StyledInFrameLink = styled.div`
 	text-align: center;
 	cursor: pointer;
 	background-color: #4daf8c;
-	margin-left: -10%;
-	margin-right: 4%;
-	width: 15rem;
 	border: 3px dashed black;
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-`;
-
-const StyledInFrameLinkBg = styled.div`
-	font-family: Space Mono;
-	font-size: 16px;
-	align-items: center;
-	text-align: center;
-	cursor: pointer;
-	background-color: #e9f0ff;
-	margin-left: -10%;
-	margin-right: 4%;
-	width: 15rem;
-	border: 3px dashed #4daf8ck;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	background-color: red;
+	width: 220px;
+	margin-left: 70px;
+	justify-content: flex-end;
 `;
 
 const Component = () => {
 	return (
 		<>
-			<FrameGenericCoupon />
+			<FrameGenericCouponLazada />
 
 			<StyledContainer>
 				<StyledInFrame>
-					<img src={PizzaHut} alt="pic" className="w-[70%] p-[0%]" />
+					<img src={Xiaomi} alt="pic" className="w-[100px] mr-[12%]" />
+
+					<StyledInFrameTxt className="mr-[4%]">
+						<span className="text-[#4DAF8C]">33% off</span>
+						<StyledInFrameTxtInner>
+							<span className="text-[#000000]">
+								<br></br>
+								Buy XIAOMI Redmi Note 10 4GB RAM 64GB ROM Now
+							</span>
+						</StyledInFrameTxtInner>
+					</StyledInFrameTxt>
+
+					<StyledInFrameLink>
+						<span className="text-[#ffffff]">See Promo Code</span>
+					</StyledInFrameLink>
 				</StyledInFrame>
 			</StyledContainer>
 		</>
