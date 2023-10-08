@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cq-demo/static/css/main.7602a077.css",
+    "main.js": "/cq-demo/static/js/main.0c8bb900.js",
+    "static/js/787.3d4dd94c.chunk.js": "/cq-demo/static/js/787.3d4dd94c.chunk.js",
+    "static/media/HeroImg.png": "/cq-demo/static/media/HeroImg.c3e63eb0c31e01bf11d7.png",
+    "static/media/MothersDayFlower.png": "/cq-demo/static/media/MothersDayFlower.f91778ff437cfcd4b0a7.png",
+    "static/media/FloweStrore.png": "/cq-demo/static/media/FloweStrore.175b33262b63dbef569a.png",
+    "index.html": "/cq-demo/index.html",
+    "main.7602a077.css.map": "/cq-demo/static/css/main.7602a077.css.map",
+    "main.0c8bb900.js.map": "/cq-demo/static/js/main.0c8bb900.js.map",
+    "787.3d4dd94c.chunk.js.map": "/cq-demo/static/js/787.3d4dd94c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7602a077.css",
+    "static/js/main.0c8bb900.js"
+  ]
+}
