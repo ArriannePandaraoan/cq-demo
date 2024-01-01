@@ -3,13 +3,13 @@ import Menu from "../../components/Menu";
 import FeaturedCoupon from "../../components/FeaturedCoupon";
 import styled from "styled-components";
 import HeroImg from "../../assets/images/HeroImg.png";
-import LatestDeals from "../LatestDeals";
+import LatestDeals from "../../assets/svg/LatestDeals";
 import GenericCoupon from "../GenericCoupon";
 import GenericCouponXiaomi from "../GenericCouponXiaomi";
 import GenericCouponApple from "../GenericCouponApple";
 import GenericCouponFlower from "../GenericCouponFlower";
 import SeeMoreBtn from "../SeeMoreBtn";
-import CheckOutBlog from "../CheckOutBlog";
+import CheckoutBlogContent from "../CheckoutBlogContent";
 
 const StyledImg = styled.div`
 	margin-top: 5%;
@@ -107,9 +107,9 @@ const Component = () => {
 				<SeeMoreBtn />
 			</StyledContainerNoBgColor>
 
-			<StyledContainerNoBgColor>
-				<CheckOutBlog />
-			</StyledContainerNoBgColor>
+			<StyledContainer>
+				<CheckoutBlogContent />
+			</StyledContainer>
 		</>
 	);
 };
