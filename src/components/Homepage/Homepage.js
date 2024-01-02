@@ -10,6 +10,7 @@ import GenericCouponApple from "../GenericCouponApple";
 import GenericCouponFlower from "../GenericCouponFlower";
 import SeeMoreBtn from "../SeeMoreBtn";
 import CheckoutBlogContent from "../CheckoutBlogContent";
+import Footer from "../Footer";
 
 const StyledImg = styled.div`
 	margin-top: 5%;
@@ -20,6 +21,17 @@ const StyledContainer = styled.div`
 	width: 100%;
 	padding: 3%;
 	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+`;
+
+const StyledContainerFooter = styled.div`
+	margin-top: 15%;
+	width: 100%;
+	padding: 3%;
+	background-color: #7a7a7a;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -56,10 +68,6 @@ const StyledContainerGenericCouponInner = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-`;
-
-const StyledContainerGenericCouponInnerBg = styled.div`
-	background-color: #e9f0ff;
 `;
 
 const Component = () => {
@@ -110,6 +118,10 @@ const Component = () => {
 			<StyledContainer>
 				<CheckoutBlogContent />
 			</StyledContainer>
+
+			<StyledContainerFooter>
+				<Footer />
+			</StyledContainerFooter>
 		</>
 	);
 };

@@ -50,11 +50,12 @@ const Component = () => {
 						<img src={DB} alt="pic" className="w-[20%]" />
 						Designer Blooms: Half Dozen Roses
 						<br />
-						<span className="bg-white pl-[15px] pr-[15px]">Get 30% Off</span>
-						<br />
+						<span className="bg-white pl-[15px] pr-[15px] mb-[20px]">
+							Get 30% Off
+						</span>
 						<Button
 							id="btn-fc"
-							className="mt-[10px] font-sans font-bold text-center"
+							className="font-sans font-bold text-center"
 							size="large">
 							Visit Store
 						</Button>
