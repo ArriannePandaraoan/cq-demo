@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/cq-demo/static/css/main.b66b0573.css",
-    "main.js": "/cq-demo/static/js/main.21f9642a.js",
+    "main.css": "/cq-demo/static/css/main.207ff44a.css",
+    "main.js": "/cq-demo/static/js/main.9db60b7d.js",
     "static/js/787.3d4dd94c.chunk.js": "/cq-demo/static/js/787.3d4dd94c.chunk.js",
     "static/media/HeroImg.png": "/cq-demo/static/media/HeroImg.c3e63eb0c31e01bf11d7.png",
     "static/media/MothersDay.png": "/cq-demo/static/media/MothersDay.a18ab42349287ed5abe2.png",
     "static/media/MothersDayFlower.png": "/cq-demo/static/media/MothersDayFlower.f91778ff437cfcd4b0a7.png",
     "static/media/FloweStrore.png": "/cq-demo/static/media/FloweStrore.175b33262b63dbef569a.png",
+    "static/media/LogoCQ.png": "/cq-demo/static/media/LogoCQ.9336d64a7e2d431b03ce.png",
     "index.html": "/cq-demo/index.html",
-    "main.b66b0573.css.map": "/cq-demo/static/css/main.b66b0573.css.map",
-    "main.21f9642a.js.map": "/cq-demo/static/js/main.21f9642a.js.map",
+    "main.207ff44a.css.map": "/cq-demo/static/css/main.207ff44a.css.map",
+    "main.9db60b7d.js.map": "/cq-demo/static/js/main.9db60b7d.js.map",
     "787.3d4dd94c.chunk.js.map": "/cq-demo/static/js/787.3d4dd94c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b66b0573.css",
-    "static/js/main.21f9642a.js"
+    "static/css/main.207ff44a.css",
+    "static/js/main.9db60b7d.js"
   ]
 }
