@@ -1,13 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import PizzaHut from "../../assets/images/PizzaHut.png";
-import Xiaomi from "../../assets/images/Xiaomi.png";
 import FlowerStore from "../../assets/images/FloweStrore.png";
-import FrameFeatured from "../../assets/svg/FrameFeatured";
-import DB from "../../assets/images/DB.png";
-import { Button, Space } from "antd";
 import FrameGenericCoupon from "../../assets/svg/FrameGenericCoupon";
-import FrameGenericCouponLazada from "../../assets/svg/FrameGenericCouponLazada";
 
 // const StyledContainer = styled.div`
 // 	font-family: Arial;
@@ -72,6 +66,15 @@ const StyledInFrameLink = styled.div`
 	justify-content: space-around;
 `;
 
+const StyledLogo = styled.div`
+	width: 200px;
+	margin-right: 7%;
+	margin-left: 2%;
+	@media screen and (max-width: 1680px) {
+		width: 150px;
+	}
+`;
+
 const Component = () => {
 	return (
 		<>
@@ -79,19 +82,17 @@ const Component = () => {
 
 			<StyledContainer>
 				<StyledInFrame>
-					<img
-						src={FlowerStore}
-						alt="pic"
-						className="w-[180px] mr-[4%] ml-[-5%]"
-					/>
+					<StyledLogo>
+						<img src={FlowerStore} alt="pic" />
+					</StyledLogo>
 
 					<StyledInFrameTxt className="mr-[5%]">
 						<span className="text-[#4DAF8C]">Get 42% Off</span>
 						<StyledInFrameTxtInner>
 							<span className="text-[#000000]">
 								<br></br>
-								Buy Beautiful You bouquet of a dozen fresh red roses arranged in
-								a classic arm bouquet now at Flowerstore.ph for Mother’s Day!
+								Buy Beautiful You bouquet of a dozen fresh red roses now for
+								Mother’s Day!
 							</span>
 						</StyledInFrameTxtInner>
 					</StyledInFrameTxt>

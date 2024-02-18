@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PizzaHut from "../../assets/images/PizzaHut.png";
-import Xiaomi from "../../assets/images/Xiaomi.png";
-import FrameFeatured from "../../assets/svg/FrameFeatured";
-import DB from "../../assets/images/DB.png";
-import { Button, Space } from "antd";
 import FrameGenericCoupon from "../../assets/svg/FrameGenericCoupon";
-import FrameGenericCouponLazada from "../../assets/svg/FrameGenericCouponLazada";
 
 // const StyledContainer = styled.div`
 // 	font-family: Arial;
@@ -71,6 +66,15 @@ const StyledInFrameLink = styled.div`
 	justify-content: space-around;
 `;
 
+const StyledLogo = styled.div`
+	width: 200px;
+	margin-right: 7%;
+	margin-left: 2%;
+	@media screen and (max-width: 1680px) {
+		width: 150px;
+	}
+`;
+
 const Component = () => {
 	return (
 		<>
@@ -78,11 +82,9 @@ const Component = () => {
 
 			<StyledContainer>
 				<StyledInFrame>
-					<img
-						src={PizzaHut}
-						alt="pic"
-						className="w-[200px] mr-[4%] ml-[-5%]"
-					/>
+					<StyledLogo>
+						<img src={PizzaHut} alt="pic" />
+					</StyledLogo>
 
 					<StyledInFrameTxt className="mr-[5%]">
 						<span className="text-[#4DAF8C]">Hot Deals ₱499</span>
@@ -90,7 +92,7 @@ const Component = () => {
 							<span className="text-[#000000]">
 								<br></br>
 								Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the price of
-								one. Available in new flavors.
+								one.
 							</span>
 						</StyledInFrameTxtInner>
 					</StyledInFrameTxt>

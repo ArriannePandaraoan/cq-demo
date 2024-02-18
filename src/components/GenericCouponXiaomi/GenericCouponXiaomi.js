@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PizzaHut from "../../assets/images/PizzaHut.png";
 import Xiaomi from "../../assets/images/Xiaomi.png";
-import FrameFeatured from "../../assets/svg/FrameFeatured";
-import DB from "../../assets/images/DB.png";
-import { Button, Space } from "antd";
-import FrameGenericCoupon from "../../assets/svg/FrameGenericCoupon";
 import FrameGenericCouponLazada from "../../assets/svg/FrameGenericCouponLazada";
 
 // const StyledContainer = styled.div`
@@ -67,9 +62,17 @@ const StyledInFrameLink = styled.div`
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	width: 220px;
-	margin-left: 70px;
-	justify-content: flex-end;
+	width: 190px;
+	justify-content: space-around;
+`;
+
+const StyledLogo = styled.div`
+	width: 200px;
+	margin-right: 4%;
+	margin-left: 5%;
+	@media screen and (max-width: 1680px) {
+		width: 150px;
+	}
 `;
 
 const Component = () => {
@@ -79,7 +82,9 @@ const Component = () => {
 
 			<StyledContainer>
 				<StyledInFrame>
-					<img src={Xiaomi} alt="pic" className="w-[100px] mr-[12%]" />
+					<StyledLogo>
+						<img src={Xiaomi} alt="pic" />
+					</StyledLogo>
 
 					<StyledInFrameTxt className="mr-[4%]">
 						<span className="text-[#4DAF8C]">33% off</span>
