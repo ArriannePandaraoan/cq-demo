@@ -3,16 +3,21 @@ import styled from "styled-components";
 import PizzaHut from "../../assets/images/PizzaHut.png";
 import FrameGenericCoupon from "../../assets/svg/FrameGenericCoupon";
 
-// const StyledContainer = styled.div`
-// 	font-family: Arial;
-// 	font-size: 24px;
-// 	font-style: normal;
-// 	font-weight: 700;
-// `;
-
 const StyledContainer = styled.div`
 	position: absolute;
 	z-index: 100;
+`;
+
+const StyledFlexContainer = styled.div`
+	display: flex;
+	width: 900px;
+	justify-content: space-around;
+	@media screen and (max-width: 1200px) {
+		width: 700px;
+	}
+	@media screen and (max-width: 900px) {
+		width: 650px;
+	}
 `;
 
 const StyledInFrame = styled.div`
@@ -24,9 +29,6 @@ const StyledInFrame = styled.div`
 	font-style: normal;
 	font-weight: 700;
 	width: 100%;
-	// background-color: pink;
-	// padding-left: 10px;
-	justify-content: space-around;
 `;
 
 const StyledInFrameTxt = styled.div`
@@ -35,9 +37,11 @@ const StyledInFrameTxt = styled.div`
 	text-align: left;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	// background-color: blue;
 	width: 400px;
+	@media screen and (max-width: 1200px) {
+		width: 300px;
+	}
 `;
 
 const StyledInFrameTxtInner = styled.div`
@@ -47,7 +51,6 @@ const StyledInFrameTxtInner = styled.div`
 	font-size: 16px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	// background-color: green;
 `;
 
@@ -63,43 +66,95 @@ const StyledInFrameLink = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 190px;
-	justify-content: space-around;
+	height: fit-content;
+	}
 `;
 
 const StyledLogo = styled.div`
-	width: 200px;
-	margin-right: 7%;
-	margin-left: 2%;
-	@media screen and (max-width: 1680px) {
-		width: 150px;
+	align-self: center;
+	align-items: center;
+	justify-content: center !important;
+	text-align: center;
+	@media screen and (max-width: 1600px) {
+		width: 120px;
+	}
+`;
+
+const StyledBr = styled.div`
+	display: flex;
+	@media screen and (max-width: 1440px) {
+		display: none;
+	}
+`;
+
+const StyledBrFiller = styled.div`
+	display: none;
+	@media screen and (max-width: 1440px) {
+		display: flex;
+		margin-bottom: 4%;
+	}
+`;
+
+const StyledLinkedTxtContainer = styled.div`
+	display: flex;
+	align-items: center;
+`;
+
+const StyledLogoContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	width: 150px;
+`;
+
+const StyledFrame = styled.div`
+	@media screen and (max-width: 1200px) {
+		display: flex;
+		width: 800px;
+		justify-content: center;
+	}
+	@media screen and (max-width: 900px) {
+		display: flex;
+		width: 700px;
+		justify-content: center;
 	}
 `;
 
 const Component = () => {
 	return (
 		<>
-			<FrameGenericCoupon />
+			<StyledFrame>
+				<FrameGenericCoupon />
+			</StyledFrame>
 
 			<StyledContainer>
 				<StyledInFrame>
-					<StyledLogo>
-						<img src={PizzaHut} alt="pic" />
-					</StyledLogo>
+					<StyledFlexContainer>
+						<StyledLogoContainer>
+							<StyledLogo>
+								<img src={PizzaHut} width="110px" alt="pic" />
+							</StyledLogo>
+						</StyledLogoContainer>
 
-					<StyledInFrameTxt className="mr-[5%]">
-						<span className="text-[#4DAF8C]">Hot Deals ₱499</span>
-						<StyledInFrameTxtInner>
-							<span className="text-[#000000]">
-								<br></br>
-								Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the price of
-								one.
-							</span>
-						</StyledInFrameTxtInner>
-					</StyledInFrameTxt>
+						<StyledInFrameTxt>
+							<span className="text-[#4DAF8C]">Hot Deals ₱499</span>
+							<StyledInFrameTxtInner>
+								<span className="text-[#000000]">
+									<StyledBr>
+										<br></br>
+									</StyledBr>
+									<StyledBrFiller></StyledBrFiller>
+									Get Pizza Hut Hot Deals 499. 2 Large Pan pizza for the price
+									of one.
+								</span>
+							</StyledInFrameTxtInner>
+						</StyledInFrameTxt>
 
-					<StyledInFrameLink className="">
-						<span className="text-[#ffffff]">See Promo Code</span>
-					</StyledInFrameLink>
+						<StyledLinkedTxtContainer>
+							<StyledInFrameLink className="">
+								<span className="text-[#ffffff]">See Promo Code</span>
+							</StyledInFrameLink>
+						</StyledLinkedTxtContainer>
+					</StyledFlexContainer>
 				</StyledInFrame>
 			</StyledContainer>
 		</>

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Menu from "../../components/Menu";
-import FeaturedCoupon from "../../components/FeaturedCoupon";
+import React from "react";
 import styled from "styled-components";
 import HeroImg from "../../assets/images/HeroImg.png";
 import LatestDeals from "../../assets/svg/LatestDeals";
-import GenericCoupon from "../GenericCoupon";
-import GenericCouponXiaomi from "../GenericCouponXiaomi";
-import GenericCouponApple from "../GenericCouponApple";
-import GenericCouponFlower from "../GenericCouponFlower";
-import SeeMoreBtn from "../SeeMoreBtn";
+import FeaturedCoupon from "../../components/FeaturedCoupon";
+import Menu from "../../components/Menu";
 import CheckoutBlogContent from "../CheckoutBlogContent";
 import Footer from "../Footer";
+import GenericCoupon from "../GenericCoupon";
+import GenericCouponApple from "../GenericCouponApple";
+import GenericCouponFlower from "../GenericCouponFlower";
+import GenericCouponXiaomi from "../GenericCouponXiaomi";
+import SeeMoreBtn from "../SeeMoreBtn";
 
 const StyledImg = styled.div`
 	margin-top: 5%;
@@ -70,6 +70,12 @@ const StyledContainerGenericCouponInner = styled.div`
 	align-items: center;
 `;
 
+const StyledLatestDeals = styled.div`
+	@media screen and (max-width: 1678px) {
+		margin-bottom: 3%;
+	}
+`;
+
 const Component = () => {
 	return (
 		<>
@@ -84,7 +90,9 @@ const Component = () => {
 			</StyledContainer>
 
 			<StyledContainerNoBgColor>
-				<LatestDeals />
+				<StyledLatestDeals>
+					<LatestDeals />
+				</StyledLatestDeals>
 			</StyledContainerNoBgColor>
 
 			<StyledContainerGenericCoupon>
